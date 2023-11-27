@@ -1,0 +1,85 @@
+body {
+    background-color: #f4fff5 ;
+}
+
+#logo { 
+    width: 100px;
+    height: auto;
+   
+}
+
+#menu {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400; 
+    font-size: 20px;
+    list-style-type: none;
+    color: #000000;   
+
+}
+
+.button {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;   
+     border-radius: 24px;
+     background-color: #22e63e;
+}
+.title {
+    font-family: 'Kanit', sans-serif;    
+    font-weight: 600;
+    font-size: 60px;
+    color: #000000;
+
+}
+
+.subtitle { 
+    font-family: 'Kanit', sans-serif; 
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+
+}
+
+.body1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color:#000000;
+
+}
+
+.body2 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:#000000;
+
+}
+
+.label { 
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#454545;
+
+}
+
+#footer { 
+    background-color: #22e63e;
+    background-attachment: fixed;
+ 
+}
+
+.footerText {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+    list-style-type: none;
+}
+
+.img {
+    width: 500px;
+    height: auto;
+    border-radius: 12px;
+    border: 16px solid #22e63e;
+}
