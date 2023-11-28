@@ -3,19 +3,23 @@ body {
 }
 
 #logo { 
-    width: 100px;
+    width: 150px;
     height: auto;
    
 }
 
-#menu {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 400; 
-    font-size: 20px;
-    list-style-type: none;
-    color: #000000;   
-
+.navbar-bg {
+    
+    background-color: #22e63e;
 }
+
+.navbar-nav .nav-link  {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500; 
+    font-size: 32px;  
+    color: #000000
+}
+
 
 .button {
     font-family: 'Kanit', sans-serif;
