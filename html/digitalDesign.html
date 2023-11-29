@@ -15,25 +15,36 @@
 </head>
 <body>
 
-    <header> <!-- Menú de navegación-->
-        <a href="../index.html">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-bg">
+            <div class="container-fluid"> 
         
-            <img id="logo" src="../imagenes/nori logo.png" alt="Logo">
-           
-           </a>
-        <nav> 
-
-            <ul id="menu"> 
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./digitalDesign.html">DIGITAL DESIGN</a></li>
-                <li><a href="./visualDesign.html">VISUAL DESIGN</a></li>
-                <li><a href="./contacto.html">CONTACT</a></li>
-                <li><a href="./now.html">NOW</a></li>
-            
-            </ul>
+                <!-- Logo -->
+                <div class="col-lg-4">
+                <a class="navbar-brand" href="../index.html">
+                    <img id="logo" src="../imagenes/nori logo.png" alt="Logo">
+                </a>
+                </div>
+                <!-- Botón de hamburguesa para pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Enlaces de navegación -->
+                <div class="collapse navbar-collapse col-lg-8" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./digitalDesign.html">Digital</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./visualDesign.html">Visual</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./now.html">Now</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-
     <main>
 
  <div> <!-- Título -->
@@ -50,36 +61,28 @@
     <p class="body2"> Date</p>
    </div>
    </main>
-    <footer id="footer"> <!-- Footoer -->
-        <p class="subtitle">
-             NORI |
-            <nav> 
-    
-                <ul id="menu"> 
+   <footer id="footer" class="container-fluid">
+
+    <div>
+                <ul class="menu">
                     <li><a href="../index.html">HOME</a></li>
-                    <li><a href="../html/digitalDesign.html">DIGITAL DESIGN</a></li>
-                    <li><a href="../html/visualDesign.html">VISUAL DESIGN</a></li>
-                    <li><a href="../html/contacto.html">CONTACT</a></li>
-                    <li><a href="../html/now.html">NOW</a></li>
-                
+                    <li><a href="./digitalDesign.html">DIGITAL</a></li>
+                    <li><a href="./visualDesign.html">VISUAL</a></li>
+                    <li><a href="./contacto.html">CONTACT</a></li>
+                    <li><a href="./now.html">NOW</a></li>
                 </ul>
-            </nav> 
-    
-            <nav> 
-    
-                <ul class="footerText"> 
-                       <li><a href="https://www.instagram.com/isbydefault/" target="_blank">INSTAGRAM</li>
-    
-                        <li> <a href="https://www.behance.net/riveros" target="_blank">BEHANCE</li>
-                        
-                        <li> <a href="https://www.linkedin.com/in/javiera-riveros-oltra-076354217/" target="_blank">LINKEDIN</li>
-                            
-    
-                   
-                   </ul>
-               </nav> 
-        
-        </p>
-    </footer>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <ul class="footerText">
+                    <li><a href="https://www.instagram.com/isbydefault/" target="_blank">INSTAGRAM</a></li>
+                    <li><a href="https://www.behance.net/riveros" target="_blank">BEHANCE</a></li>
+                    <li><a href="https://www.linkedin.com/in/javiera-riveros-oltra-076354217/" target="_blank">LINKEDIN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

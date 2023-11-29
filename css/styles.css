@@ -2,6 +2,10 @@ body {
     background-color: #f4fff5 ;
 }
 
+ul, ol {
+    list-style: none;
+}
+
 #logo { 
     width: 150px;
     height: auto;
@@ -25,15 +29,63 @@ body {
             text-align: center;
         }
 
-        .navbar-nav .nav-item {
+.navbar-nav .nav-item {
             width: 20%; /* Divide los elementos en cinco partes (equidistantes) */
             display: inline-block;
         }
 
-        .navbar-nav .nav-link {
+.navbar-nav .nav-link {
             display: block;
             text-align: center;
         }
+
+#footer {
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #22e63e;
+}
+
+       
+.menu a {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500; 
+    font-size: 36px; 
+    padding: 24px; 
+    color: #000000; 
+    text-decoration: none;
+        }
+
+
+ .menu {
+            list-style: none;
+            display: flex; /* ordenar los elementos en una fila */
+            flex-wrap: wrap;
+            justify-content:center; /* Distribuye los elementos horizontalmente con espacio alrededor */
+            align-items: center; /* Alinea verticalmente los elementos al centro */
+        }
+
+.footerText a {
+
+    font-family: 'Work sans', sans-serif;
+    font-weight: medium; 
+    font-size: 16px;
+    padding: 24px;
+    color: #7c7c7c; /* Cambia a tu color deseado */
+    text-decoration: none;
+}
+
+.footerText {
+
+    list-style: none;
+    background-color: #bfbfbf ;
+    display: flex; /* Utiliza Flexbox para ordenar los elementos en una fila */
+    flex-wrap: wrap;
+    justify-content:center; /* Distribuye los elementos horizontalmente con espacio alrededor */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    padding: 24px;
+}
+
 
 .button {
     font-family: 'Kanit', sans-serif;
@@ -79,20 +131,6 @@ body {
     font-size: 16px;
     color:#454545;
 
-}
-
-#footer { 
-    background-color: #22e63e;
-    background-attachment: fixed;
- 
-}
-
-.footerText {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    color: #000000;
-    list-style-type: none;
 }
 
 .img {
