@@ -2,6 +2,12 @@ body {
     background-color: #f4fff5 ;
 }
 
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
 ul, ol {
     list-style: none;
 }
@@ -14,7 +20,7 @@ ul, ol {
 
 .navbar-bg {
     
-    background-color: #22e63e;
+    background-color: #ffffff;
 }
 
 .navbar-nav .nav-link  {
@@ -57,7 +63,7 @@ ul, ol {
         }
 
 
- .menu {
+.menu {
             list-style: none;
             display: flex; /* ordenar los elementos en una fila */
             flex-wrap: wrap;
@@ -86,12 +92,62 @@ ul, ol {
     padding: 24px;
 }
 
-
 .button {
     font-family: 'Kanit', sans-serif;
     font-weight: 600;   
-     border-radius: 24px;
-     background-color: #22e63e;
+    border: none; /* Elimina los bordes */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 24px;
+    color: #000000; /* Texto verde */
+    padding: 8px 16px; /* Ajusta el padding según tus preferencias */
+    text-decoration: none;
+    display: inline-block; /* Alinea el botón en línea con otros elementos */
+    margin: 32px;
+}
+
+.button:hover {
+    background-color: #22e63e; /* Cambia el fondo al verde al pasar el ratón */
+    color: #fff; /* Cambia el texto a blanco al pasar el ratón */
+}
+
+
+.image-container {
+    position: relative;
+    overflow: hidden; /* Oculta cualquier contenido que se desborde del contenedor */
+    width: 100%; /* Ancho del 100% de la ventana */
+    height: 700px; /* Altura fija, ajusta según tus necesidades */
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos hijos */
+}
+
+.capa-color {
+    position: absolute;
+    width: 100%; /* Ancho del 100% del contenedor */
+    height: 100%; /* Altura del 100% del contenedor */
+    top: 0;
+    left: 0;
+    background-color: rgba(49, 49, 49, 0.5); /* Cambia el color y la opacidad según tus preferencias */
+}
+
+.img-responsive {
+    width: 100%; /* Cubre todo el ancho del contenedor */
+    height: 100%; /* Cubre toda la altura del contenedor */
+    object-fit: cover; /* Hace que la imagen se ajuste manteniendo las proporciones y se corte según sea necesario */
+    object-position: center center; /* Centra la imagen horizontalmente y corta desde la parte superior */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Color del texto */
+}
+
+.text-overlay h1 {
+    font-size: 2em; /* Tamaño del texto */
+    margin: 0; /* Eliminar márgenes predeterminados */
 }
 .title {
     font-family: 'Kanit', sans-serif;    
