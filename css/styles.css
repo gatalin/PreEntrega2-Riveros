@@ -366,3 +366,37 @@ form {
     margin: 8px;
 
 }
+
+
+.item-image {
+
+    padding-top: 24px;
+    display: flex;
+    object-fit: cover; 
+    width: 200px;
+    height: 300px; /* Altura fija, ajusta según tus necesidades */
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+    flex-grow: 1;
+}
+
+.subtitle {
+    color: #22e63e;
+}
