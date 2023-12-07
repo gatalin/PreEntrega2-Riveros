@@ -105,7 +105,7 @@ ul, ol {
     padding: 24px;
 }
 
-.button {
+.CTA-button{
     font-family: 'Kanit', sans-serif;
     font-weight: 600;   
     border: none; /* Elimina los bordes */
@@ -118,7 +118,7 @@ ul, ol {
     margin: 32px;
 }
 
-.button:hover {
+.CTA-button:hover {
     background-color: #22e63e; /* Cambia el fondo al verde al pasar el ratón */
     color: #fff; /* Cambia el texto a blanco al pasar el ratón */
 }
@@ -308,10 +308,13 @@ ul, ol {
 }
 
 form {
-    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+.form-group {
+
+    padding: 0px 0px 24px 0px;
 }
 
 label {
@@ -325,6 +328,36 @@ input textarea {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color:#454545;
+    color:#c71515;
     margin-bottom: 10px;
+}
+
+.button-primary {
+
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;   
+    border: none; /* Elimina los bordes */
+    background-color: #22e63e; /* Fondo blanco */
+    border-radius: 24px;
+    color: #000000; /* Texto verde */
+    padding: 8px 16px; /* Ajusta el padding según tus preferencias */
+    text-decoration: none;
+    display: inline-block; /* Alinea el botón en línea con otros elementos */
+   
+
+}
+
+.button-secondary {
+
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    border: 2px solid #22e63e; /* Añade un borde sólido verde */
+    border-radius: 24px;
+    color: #000000; /* Texto negro */
+    padding: 6px 14px;
+    background-color: transparent; /* Hace que el fondo sea transparente */
+    text-decoration: none;
+    display: inline-block;
+
+
 }
