@@ -45,7 +45,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="container-fluid-style">
 
     <div> <!-- Título -->
     <h1 class="title">
@@ -60,26 +60,29 @@
     <p class="body2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi aliquid voluptates voluptatum nulla repellat exercitationem excepturi magni! Reprehenderit incidunt tenetur qui delectus sint neque voluptatum adipisci sed quam numquam?
     </p>
-    <form class="label" action="procesar_formulario.php" method="post">
-        <label for="nombre">NAME</label>
-        <input type="text" name="nombre" required placeholder="your name here">
+    <div class="container-fluid">
+        <form class="label" action="procesar_formulario.php" method="post">
+            <div class="form-group">
+                <label for="nombre">NAME</label>
+                <input type="text" class="form-control" name="nombre" required placeholder="Your name here">
+            </div>
 
-         <br>
-         <br>
-        
-        <label for="email">EMAIL</label>
-        <input type="email"  name="email" required placeholder="your email here">
-        
-        <br>
-        <br>
-        <label for="mensaje">MESSAGE</label>
-        <textarea  name="mensaje" rows="4" required placeholder="your feelings here"></textarea>
-        
-        <br><br>
-        <input type="submit" value="Enviar">
-        <input type="reset"
-        value="Borrar todo">
-    </form>
+            <div class="form-group">
+                <label for="email">EMAIL</label>
+                <input type="email" class="form-control" name="email" required placeholder="Your email here">
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">MESSAGE</label>
+                <textarea class="form-control" name="mensaje" rows="4" required placeholder="Your feelings here"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Enviar">
+                <input type="reset" class="btn btn-secondary" value="Borrar todo">
+            </div>
+        </form>
+    </div>
 </div> 
     </main> 
 
