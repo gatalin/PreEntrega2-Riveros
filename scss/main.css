@@ -1,3 +1,217 @@
-section {
-  background-color: aqua;
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.container-fluid-style {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.navbar-bg {
+  background-color: #ffffff;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+.navbar-nav .nav-link {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  color: #000000;
+}
+.navbar-nav .nav-item {
+  width: 20%; /* Divide los elementos en cinco partes (equidistantes) */
+  display: flex;
+  padding-left: 24px;
+}
+.navbar-nav .nav-link {
+  display: block;
+  text-align: center;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+}
+
+.custom-toggler {
+  margin-right: 40px;
+}
+
+#footer {
+  padding-top: 80px;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #22e63e;
+}
+
+.footerText a {
+  font-family: "Work sans", sans-serif;
+  font-weight: medium;
+  font-size: 16px;
+  padding: 24px;
+  color: #7c7c7c;
+  text-decoration: none;
+}
+
+.CTA-button {
+  font-family: "Work sans", sans-serif;
+  font-weight: 600;
+  border: none;
+  background-color: #fff;
+  border-radius: 24px;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 32px;
+}
+
+.CTA-button:hover {
+  background-color: #22e63e;
+  color: #fff;
+}
+
+.button-primary {
+  font-family: "Work sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  background-color: #22e63e;
+  border-radius: 24px;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.button-secondary {
+  font-family: "Work sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: 2px solid #22e63e;
+  border-radius: 24px;
+  color: #000000;
+  padding: 6px 14px;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 8px;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+}
+
+.capa-color {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(49, 49, 49, 0.5);
+}
+
+.img-responsive {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.image-container-now {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 56px;
+}
+
+.img-now {
+  width: 17vw;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: grayscale(100%);
+}
+
+.title {
+  font-family: "Kanit", sans-serif;
+  font-weight: 600;
+  font-size: 6vw;
+  color: #1f1f1f;
+  padding-top: 32px;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: "Work sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #000000;
+}
+
+.body1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #000000;
+}
+
+.body2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+form {
+  margin: 40px 20px 100px 20px;
+}
+
+.form-group {
+  padding: 0 0 24px 0;
+}
+
+.form-label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #454545;
+}
+
+.form-control {
+  border-radius: 8px !important;
+  border: 2px solid #22e63e !important;
+  padding: 10px;
+  outline: none;
+}
+
+.form-control::-moz-placeholder {
+  color: #a8a8a8 !important;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.form-control::placeholder {
+  color: #a8a8a8 !important;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */

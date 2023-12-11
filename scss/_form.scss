@@ -1,0 +1,29 @@
+form {
+    margin: 40px 20px 100px 20px;
+}
+
+.form-group {
+    padding: 0 0 24px 0;
+}
+
+.form-label {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #454545;
+}
+
+.form-control {
+    border-radius: 8px !important;
+    border: 2px solid $primary-color !important;
+    padding: 10px;
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #a8a8a8 !important;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
