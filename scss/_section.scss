@@ -1,25 +1,85 @@
+// section presentation home //
+
 .image-container {
     position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 700px;
+    overflow: hidden; // Oculta cualquier contenido que se desborde del contenedor
+    width: 100%; // Ancho del 100% de la ventana
+    height: 750px; // Altura fija, ajusta según tus necesidades
+
+    .capa-color {
+        position: absolute;
+        width: 100%; // Ancho del 100% del contenedor
+        height: 100%; // Altura del 100% del contenedor
+        top: 0;
+        left: 0;
+        background-color: $opacity-color; // Utiliza la variable para el color y la opacidad
+    }
+
+    .img-responsive {
+        width: 100%; // Cubre todo el ancho del contenedor
+        height: 100%; // Cubre toda la altura del contenedor
+        object-fit: cover; // Hace que la imagen se ajuste manteniendo las proporciones y se corte según sea necesario
+        object-position: center center; // Centra la imagen horizontalmente y corta desde la parte superior
+    }
+
+    .text-overlay {
+        position: absolute;
+        min-width: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white; // Color del texto
+
+        h1 {
+            margin: 0;
+            font-family: $family-1;
+            font-weight: 400;
+
+            // Aplica el tamaño de fuente grande para pantallas grandes (desktop)
+            font-size: $font-size-lg;
+
+            @media (max-width: 768px) {
+                // Aplica el tamaño de fuente pequeño para pantallas pequeñas (mobile)
+                font-size: $font-size-sm;
+            }
+        }
+
+        .responsive-text {
+            @media (max-width: 768px) {
+                // Ajusta el tamaño de fuente para pantallas pequeñas (mobile)
+                font-size: $font-size-sm;
+            }
+        }
+    }
 }
 
-.capa-color {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(49, 49, 49, 0.5);
+// section work //
+
+.work-item {
+
+    a {
+        
+        text-decoration: none; // Elimina el subrayado del enlace
+        color: inherit; // Hereda el color del texto de su elemento padre
+
+    }
 }
 
-.img-responsive {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
+.image-work {
+    display: flex;
+    object-fit: cover; 
+    width:100%;
+    height: 200px; /* Altura fija, ajusta según tus necesidades */
+    align-content: center;
+    padding-bottom: 12px;
 }
+
+.description-style {
+
+padding: 8px 0px 12px 0px;
+}
+// section now //
 
 .image-container-now {
     position: relative;
@@ -41,5 +101,4 @@
     filter: grayscale(100%);
 }
 
-// Otras reglas para la sección "Now"...
-
+// Otras reglas para la sección "Now"..

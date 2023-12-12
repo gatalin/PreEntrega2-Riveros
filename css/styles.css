@@ -138,7 +138,7 @@ ul, ol {
     height: 100%; /* Altura del 100% del contenedor */
     top: 0;
     left: 0;
-    background-color: rgba(49, 49, 49, 0.5); /* Cambia el color y la opacidad según tus preferencias */
+    background-color: #31313180; /* Cambia el color y la opacidad según tus preferencias */
 }
 
 .img-responsive {

@@ -1,31 +1,76 @@
 .title {
-    font-family: 'Kanit', sans-serif;
-    font-weight: 600;
-    font-size: 6vw;
-    color: #1f1f1f;
+    font-family: $family-2;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xxl;
+    color: $title-color;
     padding-top: 32px;
     margin: 0;
 }
 
+.title2 {
+    font-family: $family-2;    
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+    color: $title-color;
+    padding-top: 24px;
+    margin: 0px;
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    justify-content: center;
+
+}
+
 .subtitle {
-    font-family: 'Work sans', sans-serif;
-    font-weight: 400;
-    font-size: 32px;
+    font-family: $family-1;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-lg;
     color: $text-color;
+    padding: 16px;
+}
+
+.subtitle2 { 
+    font-family: $family-1;    
+    font-weight: $font-weight-regular;
+    font-size: $font-size-sm;
+    padding: 40px 0px 16px 0px;
+   
 }
 
 .body1 {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
+    font-family: $family-1;
+    font-weight: $font-weight-light;
+    font-size: $font-size-md;
     color: $text-color;
+    padding: 8px;
 }
 
 .body2 {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+    font-family: $family-1;
+    font-weight: $font-weight-light;
+    font-size: $font-size-sm;
+    color: $text-color;
+    padding: 8px;
+}
+
+.description {
+    font-family: $family-1;
+    font-weight: $font-weight-light;
+    font-size: $font-size-xs;
     color: $text-color;
 }
 
+.description-title {
+    font-family: $family-1;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-md;
+    color: $text-color;
+}
+
+.tag {
+
+    font-family: $family-1;
+    font-weight: $font-weight-regular;
+    font-size: $font-size-xs;
+    color: $text-option-color; 
+}
 // Otras reglas de tipografía...

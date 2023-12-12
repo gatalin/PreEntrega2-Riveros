@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -9,26 +10,26 @@
 }
 
 .navbar-bg {
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 .navbar-nav {
   width: 100%;
+  display: flex;
+  justify-content: right;
+  padding-right: 24px;
 }
 .navbar-nav .nav-link {
-  font-family: "Kanit", sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  color: #000000;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #151515;
+  text-align: center;
 }
 .navbar-nav .nav-item {
-  width: 20%; /* Divide los elementos en cinco partes (equidistantes) */
   display: flex;
-  padding-left: 24px;
-}
-.navbar-nav .nav-link {
-  display: block;
-  text-align: center;
+  padding: 0px 8px 0px 8px;
+  justify-content: left;
 }
 
 ul, ol {
@@ -36,8 +37,9 @@ ul, ol {
 }
 
 #logo {
-  width: 150px;
+  width: 100px;
   height: auto;
+  padding-left: 24px;
 }
 
 .custom-toggler {
@@ -61,16 +63,18 @@ ul, ol {
 }
 
 .CTA-button {
-  font-family: "Work sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-weight: 600;
+  font-size: 16px;
   border: none;
   background-color: #fff;
   border-radius: 24px;
-  color: #000000;
+  color: #151515;
   padding: 8px 16px;
   text-decoration: none;
   display: inline-block;
-  margin: 32px;
+  margin: 16px;
+  min-width: 100px;
 }
 
 .CTA-button:hover {
@@ -85,7 +89,7 @@ ul, ol {
   border: none;
   background-color: #22e63e;
   border-radius: 24px;
-  color: #000000;
+  color: #151515;
   padding: 8px 16px;
   text-decoration: none;
   margin: 8px;
@@ -97,7 +101,7 @@ ul, ol {
   font-size: 16px;
   border: 2px solid #22e63e;
   border-radius: 24px;
-  color: #000000;
+  color: #151515;
   padding: 6px 14px;
   background-color: transparent;
   text-decoration: none;
@@ -108,25 +112,67 @@ ul, ol {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 700px;
+  height: 750px;
 }
-
-.capa-color {
+.image-container .capa-color {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(49, 49, 49, 0.5);
+  background-color: rgba(57, 57, 57, 0.5);
 }
-
-.img-responsive {
+.image-container .img-responsive {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+.image-container .text-overlay {
+  position: absolute;
+  min-width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.image-container .text-overlay h1 {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+@media (max-width: 768px) {
+  .image-container .text-overlay h1 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .image-container .text-overlay .responsive-text {
+    font-size: 16px;
+  }
+}
+
+.work-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image-work {
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px; /* Altura fija, ajusta según tus necesidades */
+  align-content: center;
+  padding-bottom: 12px;
+}
+
+.description-style {
+  padding: 8px 0px 12px 0px;
 }
 
 .image-container-now {
@@ -151,33 +197,76 @@ ul, ol {
 }
 
 .title {
-  font-family: "Kanit", sans-serif;
-  font-weight: 600;
-  font-size: 6vw;
-  color: #1f1f1f;
+  font-family: "Kani", sans-serif;
+  font-weight: 700;
+  font-size: 54px;
+  color: #151515;
   padding-top: 32px;
   margin: 0;
 }
 
+.title2 {
+  font-family: "Kani", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #151515;
+  padding-top: 24px;
+  margin: 0px;
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos hijos */
+  justify-content: center;
+}
+
 .subtitle {
-  font-family: "Work sans", sans-serif;
-  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
   font-size: 32px;
-  color: #000000;
+  color: #151515;
+  padding: 16px;
+}
+
+.subtitle2 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 40px 0px 16px 0px;
 }
 
 .body1 {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  font-size: 30px;
-  color: #000000;
+  font-size: 24px;
+  color: #151515;
+  padding: 8px;
 }
 
 .body2 {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  color: #000000;
+  font-size: 16px;
+  color: #151515;
+  padding: 8px;
+}
+
+.description {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #151515;
+}
+
+.description-title {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #151515;
+}
+
+.tag {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #505050;
 }
 
 form {

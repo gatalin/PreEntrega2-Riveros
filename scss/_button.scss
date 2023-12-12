@@ -1,6 +1,7 @@
 .CTA-button {
-    font-family: 'Work sans', sans-serif;
+    font-family: $family-1;
     font-weight: 600;
+    font-size: $font-size-sm;
     border: none;
     background-color: #fff;
     border-radius: 24px;
@@ -8,7 +9,8 @@
     padding: 8px 16px;
     text-decoration: none;
     display: inline-block;
-    margin: 32px;
+    margin: 16px;
+    min-width: 100px;
 }
 
 .CTA-button:hover {
