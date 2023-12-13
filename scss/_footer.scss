@@ -1,17 +1,46 @@
 #footer {
-    padding-top: 80px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 40px;
+    padding-left: 0px;
+    padding-right: 0px;
     background-color: $primary-color;
+    margin-top: 40px;
 }
 
-.footerText a {
-    font-family: 'Work sans', sans-serif;
-    font-weight: medium;
-    font-size: 16px;
+.menu {
+    
+    a {
+        font-family: $family-2;
+        font-weight: $font-weight-regular;
+        font-size: $font-size-lg;
+        padding: 24px;
+        color: $text-color;
+        text-decoration: none;
+    }
+    padding: 0px;
+    list-style: none;
+    display: flex; /* ordenar los elementos en una fila */
+    flex-wrap: wrap;
+    justify-content: center; /* Distribuye los elementos horizontalmente con espacio alrededor */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+
+.footerText {
+    a {
+        font-family: $family-1;
+        font-weight: $font-weight-light;
+        font-size: $font-size-sm;
+        padding: 24px;
+        color: $text-option-color; /* Cambia a tu color deseado */
+        text-decoration: none;
+    }
+
+    list-style: none;
+    background-color: #bfbfbf;
+    display: flex; /* Utiliza Flexbox para ordenar los elementos en una fila */
+    flex-wrap: wrap;
+    justify-content: center; /* Distribuye los elementos horizontalmente con espacio alrededor */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
     padding: 24px;
-    color: #7c7c7c;
-    text-decoration: none;
 }
 
 // Otras reglas para el pie de página...

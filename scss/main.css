@@ -47,18 +47,45 @@ ul, ol {
 }
 
 #footer {
-  padding-top: 80px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-top: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
   background-color: #22e63e;
+  margin-top: 40px;
 }
 
+.menu {
+  padding: 0px;
+  list-style: none;
+  display: flex; /* ordenar los elementos en una fila */
+  flex-wrap: wrap;
+  justify-content: center; /* Distribuye los elementos horizontalmente con espacio alrededor */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+}
+.menu a {
+  font-family: "Kani", sans-serif;
+  font-weight: 500;
+  font-size: 32px;
+  padding: 24px;
+  color: #151515;
+  text-decoration: none;
+}
+
+.footerText {
+  list-style: none;
+  background-color: #bfbfbf;
+  display: flex; /* Utiliza Flexbox para ordenar los elementos en una fila */
+  flex-wrap: wrap;
+  justify-content: center; /* Distribuye los elementos horizontalmente con espacio alrededor */
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  padding: 24px;
+}
 .footerText a {
-  font-family: "Work sans", sans-serif;
-  font-weight: medium;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   padding: 24px;
-  color: #7c7c7c;
+  color: #505050; /* Cambia a tu color deseado */
   text-decoration: none;
 }
 
@@ -113,6 +140,7 @@ ul, ol {
   overflow: hidden;
   width: 100%;
   height: 750px;
+  margin-bottom: 40px;
 }
 .image-container .capa-color {
   position: absolute;
@@ -156,6 +184,9 @@ ul, ol {
   }
 }
 
+.work-item {
+  padding: 16px 0px 16px 0px;
+}
 .work-item a {
   text-decoration: none;
   color: inherit;
@@ -175,6 +206,37 @@ ul, ol {
   padding: 8px 0px 12px 0px;
 }
 
+.market-item {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center; /* Alinea los elementos horizontalmente al centro */
+  text-align: center; /* Alinea el texto al centro si es necesario */
+}
+.market-item .content {
+  display: flex;
+  align-items: center;
+}
+.market-item .image-container-market {
+  margin-bottom: 16px;
+}
+.market-item .image-container-market img {
+  margin-top: 32px;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  border: 12px solid #202020;
+}
+.market-item .text-container-market {
+  flex-grow: 1;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .image-container-now {
   position: relative;
   overflow: hidden;
@@ -184,9 +246,8 @@ ul, ol {
   justify-content: center;
   padding-top: 56px;
 }
-
-.img-now {
-  width: 17vw;
+.image-container-now .img-now {
+  width: 240px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -194,6 +255,81 @@ ul, ol {
   align-items: center;
   justify-content: center;
   filter: grayscale(100%);
+}
+@media (max-width: 768px) {
+  .image-container-now .img-now {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.text-container-now {
+  padding: 24px 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos horizontalmente al centro */
+  text-align: center; /* Alinea el texto al centro si es necesario */
+}
+
+form {
+  margin: 40px 20px 100px 20px;
+}
+
+.form-group {
+  padding: 0px 0px 24px 0px;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 2px solid #f7f7f7;
+  padding: 10px;
+  outline: none;
+}
+
+.form-control::-moz-placeholder {
+  color: #505050;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.form-control::placeholder {
+  color: #505050;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.column-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px; /* Ajusta según tus necesidades */
+}
+.column-content .proyect-image-container img {
+  width: 600px;
+  height: auto;
+}
+.column-content .text-container {
+  text-align: center; /* Alinea el texto al centro si es necesario */
+  max-width: 800px; /* Ajusta según tus necesidades */
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px; /* Ajusta según tus necesidades */
+}
+.row-container .moodboard-image-container img {
+  width: 500px;
+  height: auto;
+}
+.row-container .moodboard-text-container {
+  text-align: center;
+  max-width: 800px; /* Ajusta según tus necesidades */
 }
 
 .title {
@@ -229,7 +365,13 @@ ul, ol {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  padding: 40px 0px 16px 0px;
+}
+
+.subtitle3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 16px;
 }
 
 .body1 {
@@ -266,6 +408,13 @@ ul, ol {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 12px;
+  color: #505050;
+}
+
+.form-label {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
   color: #505050;
 }
 
