@@ -8,6 +8,12 @@
   padding-left: 40px;
   padding-right: 40px;
 }
+@media (max-width: 768px) {
+  .container-fluid-style {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 
 .navbar-bg {
   background-color: #f7f7f7;
@@ -135,12 +141,45 @@ ul, ol {
   margin: 8px;
 }
 
+.button-tertiary {
+  font-family: "Work sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 24px;
+  color: #151515;
+  padding: 6px 14px;
+  background-color: transparent;
+  text-decoration: none;
+  margin: 8px;
+}
+
+#button-back {
+  padding: 24px;
+}
+#button-back i svg {
+  fill: black;
+  width: 32px; /* Ajusta según tu necesidad */
+  height: 32px; /* Ajusta según tu necesidad */
+  overflow: visible;
+}
+#button-back i a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .image-container {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 750px;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .image-container {
+    width: 100%;
+    height: 350px;
+  }
 }
 .image-container .capa-color {
   position: absolute;
@@ -258,7 +297,7 @@ ul, ol {
 }
 @media (max-width: 768px) {
   .image-container-now .img-now {
-    width: 200px;
+    width: 150px;
     height: auto;
   }
 }
@@ -271,9 +310,26 @@ ul, ol {
   align-items: center; /* Alinea los elementos horizontalmente al centro */
   text-align: center; /* Alinea el texto al centro si es necesario */
 }
-
-form {
-  margin: 40px 20px 100px 20px;
+.text-container-now .title {
+  width: 750px;
+}
+@media (max-width: 768px) {
+  .text-container-now .title {
+    width: 200px;
+    height: auto;
+    font-size: 24px;
+  }
+}
+.text-container-now .subtitle3 {
+  width: 750px;
+  padding: 24px 0px 0px 0px;
+}
+@media (max-width: 768px) {
+  .text-container-now .subtitle3 {
+    width: 200px;
+    height: auto;
+    font-size: 16px;
+  }
 }
 
 .form-group {
@@ -301,34 +357,93 @@ form {
   font-size: 24px;
 }
 
+.text-container-center {
+  padding: 24px 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos horizontalmente al centro */
+  text-align: center; /* Alinea el texto al centro si es necesario */
+}
+.text-container-center .body2 {
+  width: 500px;
+  padding: 16px 0px 0px 0px;
+}
+@media (max-width: 768px) {
+  .text-container-center .body2 {
+    width: 250px;
+  }
+}
+.text-container-center .subtitle {
+  width: 500px;
+  padding: 24px 0px 0px 0px;
+}
+@media (max-width: 768px) {
+  .text-container-center .subtitle {
+    width: 250px;
+    font-size: 24px;
+  }
+}
+
 .column-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px; /* Ajusta según tus necesidades */
+  margin-bottom: 40px;
 }
 .column-content .proyect-image-container img {
   width: 600px;
   height: auto;
+  margin: 24px;
 }
 .column-content .text-container {
   text-align: center; /* Alinea el texto al centro si es necesario */
   max-width: 800px; /* Ajusta según tus necesidades */
 }
-
-.row-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-top: 20px; /* Ajusta según tus necesidades */
+.column-content .text-container .subtitle {
+  margin: 16px;
 }
-.row-container .moodboard-image-container img {
-  width: 500px;
+.column-content .text-container .subtitle3 {
+  margin: 16px;
+}
+.column-content .text-container .body {
+  margin-bottom: 52px;
+}
+
+.row-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+@media (max-width: 768px) {
+  .row-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    max-width: 300px;
+  }
+}
+.row-content .moodboard-image-container {
+  margin: 16px;
+}
+.row-content .moodboard-image-container img {
+  width: 400px;
   height: auto;
 }
-.row-container .moodboard-text-container {
-  text-align: center;
+@media (max-width: 768px) {
+  .row-content .moodboard-image-container {
+    margin-bottom: 40px;
+    max-width: 300px;
+  }
+}
+.row-content .moodboard-text-container {
+  text-align: center; /* Alinea el texto al centro si es necesario */
   max-width: 800px; /* Ajusta según tus necesidades */
 }
 
@@ -358,7 +473,6 @@ form {
   font-weight: 500;
   font-size: 32px;
   color: #151515;
-  padding: 16px;
 }
 
 .subtitle2 {
@@ -371,7 +485,6 @@ form {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
-  padding: 16px;
 }
 
 .body1 {
@@ -379,7 +492,6 @@ form {
   font-weight: 400;
   font-size: 24px;
   color: #151515;
-  padding: 8px;
 }
 
 .body2 {
@@ -387,7 +499,6 @@ form {
   font-weight: 400;
   font-size: 16px;
   color: #151515;
-  padding: 8px;
 }
 
 .description {

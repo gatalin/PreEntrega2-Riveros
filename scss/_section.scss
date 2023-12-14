@@ -7,6 +7,12 @@
     height: 750px; // Altura fija, ajusta según tus necesidades
     margin-bottom: 40px;
 
+    @media (max-width: 768px) {
+      // Aplica el tamaño de fuente pequeño para pantallas pequeñas (mobile)
+      width: 100%;
+      height: 350px;
+  }
+
     .capa-color {
         position: absolute;
         width: 100%; // Ancho del 100% del contenedor
@@ -144,9 +150,10 @@ padding: 8px 0px 12px 0px;
       filter: grayscale(100%);
 
       @media (max-width: 768px) {
-        width: 200px;
+        width: 150px;
         height: auto;
     }
+
     }
   }
   
@@ -157,13 +164,34 @@ padding: 8px 0px 12px 0px;
     flex-direction: column;
     align-items: center; /* Alinea los elementos horizontalmente al centro */
     text-align: center; /* Alinea el texto al centro si es necesario */
+
+    .title {
+
+      width: 750px;
+
+      @media (max-width: 768px) {
+        width: 200px;
+        height: auto;
+        font-size: $font-size-md;
+    }
+
+    }
+
+    .subtitle3 {
+
+      width: 750px;
+      padding: 24px 0px 0px 0px;
+
+      @media (max-width: 768px) {
+        width: 200px;
+        height: auto;
+        font-size: $font-size-sm;
+    }
+    }
+
   }
   
 // section contact //
-
-form {
-    margin: 40px 20px 100px 20px;
-}
 
 .form-group {
     padding: 0px 0px 24px 0px;
@@ -183,45 +211,124 @@ form {
     font-size: $font-size-md;
 }
 
+
+.text-container-center {
+  padding: 24px 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los elementos horizontalmente al centro */
+  text-align: center; /* Alinea el texto al centro si es necesario */
+
+  .body2 {
+
+    width: 500px;
+    padding: 16px 0px 0px 0px;
+
+    @media (max-width: 768px) {
+
+      width: 250px;
+    
+  }
+   
+  }
+
+  .subtitle {
+
+    width: 500px;
+    padding: 24px 0px 0px 0px;
+
+    @media (max-width: 768px) {
+
+      width: 250px;
+      font-size: $font-size-md;
+    
+  }
+    
+}
+
+}
 // Proyect sections //
+
 .column-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px; /* Ajusta según tus necesidades */
+    margin-bottom: 40px;
   
     .proyect-image-container {
       img {
         width: 600px;
         height: auto;
+        margin: 24px;
       }
     }
   
     .text-container {
       text-align: center; /* Alinea el texto al centro si es necesario */
       max-width: 800px; /* Ajusta según tus necesidades */
+
+      .subtitle {
+
+        margin: 16px;
+      }
+
+      .subtitle3 {
+
+        margin: 16px;
+
+       }
+
+       .body {
+
+        margin-bottom: 52px;
+       }
+
     }
   }
-.row-container {
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    margin-top: 20px; /* Ajusta según tus necesidades */
-  
+
+.row-content {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-bottom: 40px;
+      max-width: 800px;
+
+
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+        max-width: 300px;
+    }
+
     .moodboard-image-container {
       img {
-        width: 500px;
+        width: 400px;
         height: auto;
       }
+      margin: 16px;
+
+      @media (max-width: 768px) {
+        margin-bottom: 40px;
+        max-width: 300px;
+    }
+
     }
   
     .moodboard-text-container {
-      text-align: center;
+      text-align: center; /* Alinea el texto al centro si es necesario */
       max-width: 800px; /* Ajusta según tus necesidades */
-  
-    }
+   
   }
+
+}
+
   
   
 // Otras reglas para la sección "Now"..
