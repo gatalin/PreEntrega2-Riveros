@@ -7,6 +7,7 @@
     height: 750px; // Altura fija, ajusta según tus necesidades
     margin-bottom: 40px;
 
+
     @media (max-width: 768px) {
       // Aplica el tamaño de fuente pequeño para pantallas pequeñas (mobile)
       width: 100%;
@@ -27,6 +28,7 @@
         height: 100%; // Cubre toda la altura del contenedor
         object-fit: cover; // Hace que la imagen se ajuste manteniendo las proporciones y se corte según sea necesario
         object-position: center center; // Centra la imagen horizontalmente y corta desde la parte superior
+
     }
 
     .text-overlay {
@@ -72,8 +74,14 @@
 
     }
 
-    padding: 16px 0px 16px 0px;
+    padding: 16px 0px 40px 0px;
 }
+
+.work-item-only {
+
+  padding-bottom: 40px;
+}
+
 
 .image-work {
     display: flex;
@@ -86,7 +94,15 @@
 
 .description-style {
 
-padding: 8px 0px 12px 0px;
+padding: 8px 0px 4px 0px;
+}
+
+.coming-soon-tag {
+  color: $text-option-color; /* O el color deseado */
+  font-family: 'Work Sans', sans-serif;
+  font-weight: $font-weight-regular;
+  font-size: $font-size-xs;
+  padding: 0px;
 }
 
 // market section //
