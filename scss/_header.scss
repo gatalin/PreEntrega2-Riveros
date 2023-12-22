@@ -21,6 +21,14 @@
         padding: 0px 8px 0px 8px;
        justify-content: left;
     }
+
+    .nav-item-selected{
+        display: flex;
+        padding: 0px 8px 0px 8px;
+       justify-content: left;
+       border-bottom: 2px solid $text-option-color;
+       
+    }
 }
 
 ul, ol {

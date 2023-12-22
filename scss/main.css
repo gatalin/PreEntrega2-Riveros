@@ -37,6 +37,12 @@
   padding: 0px 8px 0px 8px;
   justify-content: left;
 }
+.navbar-nav .nav-item-selected {
+  display: flex;
+  padding: 0px 8px 0px 8px;
+  justify-content: left;
+  border-bottom: 2px solid #505050;
+}
 
 ul, ol {
   list-style: none;
